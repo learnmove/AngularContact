@@ -7,3 +7,19 @@ body {
 .clicked{
   color:red;
 }
+.main,header nav{
+  width:75%;
+  margin:32px auto;
+}
+header nav a{
+  color:green;
+  text-decoration:none;
+  font-weight: bold;
+}
+header nav a:hover,
+header nav a:active{
+  color:red
+}
+.ng-invalid{
+ border:3px solid red; 
+}
