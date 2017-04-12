@@ -17,7 +17,14 @@ import {HttpTestComponent} from './http-test.component'
             <div class="main">
             <router-outlet></router-outlet>
             <http-test></http-test>
-            
+            <div class="pipes">
+            <h2>Pipe Data</h2>
+            {{date|date:'fullDate'}}
+            <h2>Pipe number</h2>
+            {{1.55|number:'1.1-4'}}
+              <h2>Pipe 貨幣</h2>
+            {{133|currency:'EUR':true}}
+            </div>
             </div>
         
          `,
@@ -30,5 +37,5 @@ import {HttpTestComponent} from './http-test.component'
     
 ])
 export class AppComponent {
-
+date=new Date();
 }

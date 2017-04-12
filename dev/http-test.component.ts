@@ -8,7 +8,7 @@ import {Component} from 'angular2/core';
     
     <button (click)="getData()">getdata</button>
         <div>{{getjsonData}} </div>
-         <button (click)="getPost()">getdata</button>
+         <button (click)="getPost()">getpostdata</button>
         <div>{{postjsonData}} </div>
     </div>
        
